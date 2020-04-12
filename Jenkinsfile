@@ -9,6 +9,7 @@ pipeline {
           echo "Build step"
           sh 'mvn clean'
           sh 'mvn install'
+          sh 'mvn invoker'
           sh 'mvn package'
         }
      
